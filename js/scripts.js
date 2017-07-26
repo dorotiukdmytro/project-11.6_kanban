@@ -71,6 +71,7 @@ $(function() {
 		removeCard: function() {
 			this.$element.remove();
 		}
+
 	}
 	var board = {
     name: 'Kanban Board',
@@ -108,5 +109,42 @@ $(function() {
 	// DODAWANIE KART DO KOLUMN
 	todoColumn.addCard(card1);
 	doingColumn.addCard(card2);
+
+	$('#board').css({
+		'background-color' :'#A8A8A8',
+		'width' :'300px',
+		'height' :'auto',
+		'border-radius' :'10px',
+		'padding' : '10px 20px',
+		'margin' :'20px 20px'
+	});
+
+	$('.column-title').css({
+		'color' :'#2C3337',
+		'text-align' :'right'
+	});
+
+	$('.column-card-list').css({
+		'color' :'black',
+		'font-size' :'20px'
+	});
+	$('.card').css({
+		'background-color' :'white',
+		'list-style-type' :'none',
+		'width' :'200px',
+		'margin-left' :'0',
+		'border-radius' :'15px',
+		'padding' :'10px'
+	});
+	$('button').css({
+		'color' :'#7A9DB5',
+		'list-style-type' :'none'
+	});
+	$('h1').css({
+		'text-transform' :'uppercase',
+		'font-size' :'26px',
+		'text-align' :'center'
+	});
 });
+
 
